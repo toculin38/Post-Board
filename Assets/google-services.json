@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "192271047156",
+    "firebase_url": "https://post-board-c5bf7.firebaseio.com",
+    "project_id": "post-board-c5bf7",
+    "storage_bucket": "post-board-c5bf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192271047156:android:5308b7b2b90f0ec8",
+        "android_client_info": {
+          "package_name": "com.xierstudio.postboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192271047156-30166tf16a5h6loehk502duuf0jtffa2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc2Ff6_Aouj34mzT7tVd7X_PG5ogTpopk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

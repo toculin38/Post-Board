@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="firebase_database_url" translatable="false">https://post-board-c5bf7.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">192271047156</string>
+  <string name="google_storage_bucket" translatable="false">post-board-c5bf7.appspot.com</string>
+  <string name="project_id" translatable="false">post-board-c5bf7</string>
+  <string name="google_api_key" translatable="false">AIzaSyBc2Ff6_Aouj34mzT7tVd7X_PG5ogTpopk</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBc2Ff6_Aouj34mzT7tVd7X_PG5ogTpopk</string>
+  <string name="google_app_id" translatable="false">1:192271047156:android:5308b7b2b90f0ec8</string>
+  <string name="default_web_client_id" translatable="false">192271047156-30166tf16a5h6loehk502duuf0jtffa2.apps.googleusercontent.com</string>
+</resources>
