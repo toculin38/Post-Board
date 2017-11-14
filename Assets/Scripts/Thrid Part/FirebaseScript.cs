@@ -58,9 +58,8 @@ public class FirebaseScript : MonoBehaviour
         });
     }
 
-    public void StartTransaction(Func<MutableData, TransactionResult> transaction)
+    public void StartTransaction(DatabaseReference reference, Func<MutableData, TransactionResult> transaction)
     {
-        DatabaseReference reference = Database.GetReference("Topics");
         reference.RunTransaction(transaction).ContinueWith((task) =>
         {
             if (task.Exception != null)
@@ -70,7 +69,6 @@ public class FirebaseScript : MonoBehaviour
             else
             {
                 Debug.Log("Transaction Complete");
-                Debug.Log(task.Result.ToString());
             }
         });
     }

@@ -24,7 +24,8 @@ public class MyFavoritePage : MonoBehaviour
 
     public void OnCreateTopicClick()
     {
-        firebaseScript.StartTransaction((mutableData) =>
+        DatabaseReference reference = firebaseScript.Database.GetReference("Topics");
+        firebaseScript.StartTransaction(reference, (mutableData) =>
         {
             List<object> topics = mutableData.Value != null ? mutableData.Value as List<object> : new List<object>();
 
@@ -43,7 +44,6 @@ public class MyFavoritePage : MonoBehaviour
     public void OnUserSignIn(Firebase.Auth.FirebaseUser firebaseUser)
     {
         SetUserContent(firebaseUser.DisplayName, firebaseUser.PhotoUrl);
-        SetFavoratie();
     }
 
     void SetUserContent(string userName, Uri photoUrl)
@@ -69,7 +69,7 @@ public class MyFavoritePage : MonoBehaviour
         unit.SetUnit(title, info);
         unit.GetComponent<Button>().onClick.AddListener(() =>
         {
-            print(snapshot.Child("Comment").Reference.ToString());
+            chatPage.SetReference(snapshot.Child("Comment").Reference);
             chatPage.gameObject.SetActive(true);
         });
     }
